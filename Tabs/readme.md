@@ -11,5 +11,3 @@
 - showAllText: 全部按钮的文字
 - itemWidth: 每个按钮的宽度
 - multi： 是否可以多选
--
--
