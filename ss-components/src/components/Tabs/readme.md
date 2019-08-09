@@ -1,5 +1,6 @@
 - 必须:
-- items:Tab 选项,['tab1','tab2']
+- items:Tab 选项:  
+  `[ {key: 'key1', value: 'key1'}, {key: 'key2', value: 'key2'}, {key: 'key3', value: 'key3'}, {key: 'key4', value: 'key4'}, {key: 'key5', value: 'key5'}, ]`;
 
 - 其他:
 - value: 当前选中的 Tab

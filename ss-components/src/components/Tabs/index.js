@@ -47,7 +47,7 @@ class Tabs extends React.PureComponent {
         });
       } else {
         if (value.indexOf(disabledItem) > -1) {
-          throw new Error(dI + " is disabled");
+          throw new Error(disabledItem + " is disabled");
         }
       }
     }
