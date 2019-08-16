@@ -112,6 +112,7 @@ class Tabs extends React.PureComponent {
       : `${isDisabled ? "ss-tab-item-disabled-pure" : ""}`;
     return (
       <label
+        key={item.key}
         className={`${isDisabled} ${isChecked} ${
           isDisabled && disabledTip[item.key] ? "tooltip" : ""
         }`}

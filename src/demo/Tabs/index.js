@@ -6,23 +6,23 @@ class DemoTabs extends React.PureComponent {
   render() {
     return (
       <div className="demo-tabs">
-        <li>
+        <li key="1">
           <span>normal</span>
           <Tabs items={items} value={"key1"} />
         </li>
-        <li>
+        <li key="2">
           <span>big</span>
           <Tabs items={items} value={"key1"} size="big" itemWidth={90} />
         </li>
-        <li>
+        <li key="3">
           <span>可多选</span>
           <Tabs items={items} value={["key1", "key2"]} multi />
         </li>
-        <li>
+        <li key="4">
           <span>显示全部</span>
           <Tabs items={items} value={"key1"} showAll showAllText="ALL_KEYS" />
         </li>
-        <li>
+        <li key="5">
           <span>全部+多选</span>
           <Tabs
             items={items}
@@ -32,7 +32,7 @@ class DemoTabs extends React.PureComponent {
             showAllText="ALL_KEYS"
           />
         </li>
-        <li>
+        <li key="6">
           <span>禁用元素</span>
           <Tabs
             items={items}
