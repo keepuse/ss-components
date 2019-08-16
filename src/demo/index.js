@@ -2,13 +2,14 @@ import React from "react";
 import Menus from "./Menus";
 import Tabs from "./Tabs";
 import Button from "./Button";
+import Home from "./Home";
 import "./style.less";
 
 class App extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      menu: "Tabs"
+      menu: "Home"
     };
   }
 
@@ -26,6 +27,7 @@ class App extends React.PureComponent {
         <div className="demo-content">
           {menu === "Tabs" && <Tabs />}
           {menu === "Button" && <Button />}
+          {menu === "Home" && <Home />}
         </div>
       </div>
     );

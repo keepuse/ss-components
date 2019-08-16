@@ -30,4 +30,4 @@ class App extends React.PureComponent {
 
 export default App;
 
-const MENUS = ["Tabs", "FolderFrame", "Button"];
+const MENUS = ["Home", "Tabs", "FolderFrame", "Button"];
