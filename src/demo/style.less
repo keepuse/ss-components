@@ -3,12 +3,27 @@
   height: 100%;
   display: flex;
   flex-direction: row;
-  padding: 8px;
   box-sizing: border-box;
   &-menu {
     width: 240px;
     height: 100%;
+    padding: 18px 0px 8px 8px;
+    box-sizing: border-box;
     border-right: 1px solid #193d37;
+    background: #172422;
+
+    li {
+      height: 24px;
+      line-height: 24px;
+      border-bottom: 1px solid #000;
+      user-select: none;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    li.active {
+      //   background-color: #ff9200;
+      color: #ff9200;
+    }
   }
   &-content {
     flex: 1;

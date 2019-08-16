@@ -4,13 +4,25 @@ import Tabs from "./Tabs";
 import "./style.less";
 
 class App extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      menu: "Tabs"
+    };
+  }
+
+  h_menu = (menu) => {
+    this.setState({
+      menu
+    });
+  };
+
   render() {
+    const { menu } = this.state;
     return (
       <div className="demo">
-        <Menus />
-        <div className="demo-content">
-          <Tabs />
-        </div>
+        <Menus menu={menu} onChange={this.h_menu} />
+        <div className="demo-content">{menu === "Tabs" && <Tabs />}</div>
       </div>
     );
   }
