@@ -1,0 +1,3 @@
+- `theme`:主要颜色
+  -- [`green`,`yellow`,`red`,`gray`]
+- `disabled`:按钮失效状态

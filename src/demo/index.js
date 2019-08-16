@@ -1,6 +1,7 @@
 import React from "react";
 import Menus from "./Menus";
 import Tabs from "./Tabs";
+import Button from "./Button";
 import "./style.less";
 
 class App extends React.PureComponent {
@@ -22,7 +23,10 @@ class App extends React.PureComponent {
     return (
       <div className="demo">
         <Menus menu={menu} onChange={this.h_menu} />
-        <div className="demo-content">{menu === "Tabs" && <Tabs />}</div>
+        <div className="demo-content">
+          {menu === "Tabs" && <Tabs />}
+          {menu === "Button" && <Button />}
+        </div>
       </div>
     );
   }
