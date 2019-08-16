@@ -96,7 +96,8 @@ class Tabs extends React.PureComponent {
 
       this.setState({ value: [...checkedValue] }, () => {
         const { onChange } = this.props;
-        typeof onChange === "function" && onChange(checkedValue);
+        typeof onChange === "function" &&
+          onChange(multi ? checkedValue : checkedValue[0]);
       });
     }
   };
