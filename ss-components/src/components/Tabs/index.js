@@ -7,12 +7,12 @@ import "./style.less";
 class Tabs extends React.PureComponent {
   constructor(props) {
     super(props);
-    this.Determine(props.value, props.disabledItem);
     let value = Array.isArray(props.value)
       ? props.value
       : props.value
       ? [props.value]
       : [];
+    this.Determine(value, props.disabledItem);
     this.isMulti(value);
     value = value.length === 0 && props.showAll ? ["ALL"] : value;
     this.state = {

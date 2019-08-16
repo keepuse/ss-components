@@ -1,5 +1,6 @@
 import React from "react";
 import { Tabs } from "./demo";
+// import "./demo/App.css";
 
 function App() {
   return (
