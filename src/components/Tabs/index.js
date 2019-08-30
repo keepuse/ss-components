@@ -140,7 +140,7 @@ class Tabs extends React.PureComponent {
     }
 
     return (
-      <div className={`ss-tab-${size ? size : "normal"}`}>
+      <div className={`ss-tab ss-tab-${size ? size : "normal"}`}>
         {options.map(this.renderTabItem)}
       </div>
     );
